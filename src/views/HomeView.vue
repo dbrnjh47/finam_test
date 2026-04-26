@@ -5,6 +5,7 @@ import '@/assets/scss/home/index.scss';
 import Hero from '@/components/home/Hero.vue';
 import Disputes from '@/components/home/Disputes.vue';
 import { useSeo } from '@/composables/useSeo'
+import FAQ from '@/components/home/FAQ.vue';
 
 useSeo({
   title: 'Главная',
@@ -17,4 +18,5 @@ useSeo({
 <template>
   <Hero></Hero>
   <Disputes></Disputes>
+  <FAQ></FAQ>
 </template>
