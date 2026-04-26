@@ -1,8 +1,8 @@
 <script setup>
 
 import { usePhoneFormatter } from '@/composables/usePhoneFormatter'
-import logo from '@/assets/images/logo.svg'
 import strImage from '@/assets/images/header/str.svg'
+import Logo from '@/components/Logo.vue';
 
 const { formatPhoneNumber } = usePhoneFormatter();
 
@@ -34,10 +34,7 @@ const phone = import.meta.env.VITE_APP_PHONE;
 
 <template>
   <div class="header_base header__container">
-    <RouterLink :to="{ name: 'IndexPage' }" class="logo">
-      <img :src="logo" alt="logo">
-      <span>Краски ремонта</span>
-    </RouterLink>
+    <Logo></Logo>
 
     <div class="header_base__menu">
       <ul>
