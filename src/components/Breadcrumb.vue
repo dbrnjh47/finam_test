@@ -37,7 +37,6 @@ const props = defineProps({
 
 const buildFromRoute = () => {
   props.items.unshift({ name: 'Главная', url: '/' })
-  console.log(props.items);
   return props.items
 }
 

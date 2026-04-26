@@ -121,3 +121,69 @@ body {
     opacity: 0.7;
   }
 }
+
+h2 {
+  font-family: Druk Cyr;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #141724;
+}
+
+input {
+  font-size: 16px;
+  font-weight: 500;
+  color: #141724;
+  width: 100%;
+  &::placeholder {
+    color: #1417244d;
+  }
+}
+.input {
+  background: #fff;
+  padding: 20px 24px;
+
+  border-radius: 0px;
+
+  width: 100%;
+}
+
+.input_phone_wrapper {
+  display: flex;
+  align-items: center;
+  input {
+    margin-left: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -5%;
+    color: #141724;
+  }
+  img {
+    margin-right: 8px;
+  }
+}
+
+.form {
+  padding: 40px;
+  background: #96ce06;
+  h2 {
+    font-size: 36px;
+  }
+  &__inputs {
+    margin-top: 32px;
+    gap: 20px;
+    display: grid;
+  }
+  button {
+    background: #5638fa;
+    width: 100%;
+    padding: 19px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -5%;
+    margin-top: 30px;
+  }
+}
