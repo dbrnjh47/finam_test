@@ -1,5 +1,6 @@
 <script setup>
 
+import Hero from '@/components/home/Hero.vue';
 import { useSeo } from '@/composables/useSeo'
 
 useSeo({
@@ -11,7 +12,5 @@ useSeo({
 </script>
 
 <template>
-  <main>
-
-  </main>
+  <Hero></Hero>
 </template>
