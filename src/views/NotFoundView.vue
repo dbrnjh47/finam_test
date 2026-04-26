@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-    404
-  </main>
+  404
 </template>

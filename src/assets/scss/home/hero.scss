@@ -1,0 +1,32 @@
+.home_hero {
+  padding-bottom: 120px;
+  padding-top: 180px;
+  z-index: 1;
+  position: relative;
+  h1 {
+    font-family: Druk Cyr;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+  p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -5%;
+    width: 54.38vw;
+    color: #fff;
+    line-height: 150%;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
