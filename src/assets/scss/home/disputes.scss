@@ -1,0 +1,61 @@
+.home_disputes {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 70.21vw auto;
+  gap: 20px;
+
+  table {
+    margin-top: 60px;
+    background: #ffffff;
+    padding: 24px 17px;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    thead {
+      background: #f0f2f4;
+      th {
+        padding: 20px 0;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -5%;
+        color: #141724;
+      }
+    }
+    tbody {
+      tr {
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -17px;
+          bottom: 0;
+          z-index: 0;
+          height: 1px;
+          width: calc(100% + 34px);
+          background: #000000;
+          opacity: 0.1;
+        }
+      }
+      td {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: -5%;
+        color: #141724;
+        padding: 20px 0;
+        padding-right: 5px;
+      }
+    }
+    th:first-child,
+    td:first-child {
+      padding-left: 30px;
+    }
+    th:last-child,
+    td:last-child {
+      padding-right: 30px;
+    }
+  }
+}

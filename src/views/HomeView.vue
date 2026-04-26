@@ -1,6 +1,9 @@
 <script setup>
 
+import '@/assets/scss/home/index.scss';
+
 import Hero from '@/components/home/Hero.vue';
+import Disputes from '@/components/home/Disputes.vue';
 import { useSeo } from '@/composables/useSeo'
 
 useSeo({
@@ -13,4 +16,5 @@ useSeo({
 
 <template>
   <Hero></Hero>
+  <Disputes></Disputes>
 </template>

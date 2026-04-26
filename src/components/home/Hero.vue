@@ -1,5 +1,4 @@
 <script setup>
-import '@/assets/scss/home/index.scss';
 import bgImage from '@/assets/images/home/heroes/1.png'
 
 import Breadcrumb from '@/components/Breadcrumb.vue'
