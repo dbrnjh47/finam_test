@@ -4,6 +4,10 @@
   grid-template-columns: 70.21vw auto;
   gap: 20px;
 
+  @media (min-width: 1920px) {
+    grid-template-columns: auto 440px;
+  }
+
   table {
     margin-top: 60px;
     background: #ffffff;
@@ -37,6 +41,9 @@
           width: calc(100% + 34px);
           background: #000000;
           opacity: 0.1;
+        }
+        &:last-child::after {
+          display: none;
         }
       }
       td {

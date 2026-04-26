@@ -1,5 +1,7 @@
 <script setup>
 
+import BidForm from '@/components/forms/BidForm.vue'
+
 const disputes = [
   {
     "service": "Взыскание неустойки за просрочку передачи объекта строительства",
@@ -56,6 +58,8 @@ const disputes = [
         </tbody>
       </table>
     </div>
-    <div style="background: red;"></div>
+    <div>
+      <BidForm></BidForm>
+    </div>
   </section>
 </template>
