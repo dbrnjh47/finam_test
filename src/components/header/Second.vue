@@ -37,32 +37,26 @@ const header_second_imgs = { ...infoImgs, ...socialImgs }
 </script>
 
 <template>
-  <header class="header" itemscope itemtype="https://schema.org/WPHeader">
-    <div class="header_second header__container">
-      <div>
-        <span>
-          <img :src="header_second_imgs.point" alt="point">
-          г. Москва, Скандинавский бульвар, д. 3, к.
-        </span>
-        <span>
-          <img :src="header_second_imgs.time" alt="time">
-          с 9:00 до 22:00, без выходных
-        </span>
-      </div>
-      <div>
-        <a :href="env.VITE_URL_MAX" target="_blank">
-          <img :src="header_second_imgs.max" alt="max">
-          MAX
-        </a>
-        <a itemprop="email" :href="`mailto:${env.VITE_APP_EMAIL}`">
-          <img :src="header_second_imgs.mail" alt="mail">
-          {{ env.VITE_APP_EMAIL }}
-        </a>
-      </div>
+  <div class="header_second header__container">
+    <div>
+      <span>
+        <img :src="header_second_imgs.point" alt="point">
+        г. Москва, Скандинавский бульвар, д. 3, к.
+      </span>
+      <span>
+        <img :src="header_second_imgs.time" alt="time">
+        с 9:00 до 22:00, без выходных
+      </span>
     </div>
-
-    <div class="header_base header__container">
-
+    <div>
+      <a :href="env.VITE_URL_MAX" target="_blank">
+        <img :src="header_second_imgs.max" alt="max">
+        MAX
+      </a>
+      <a itemprop="email" :href="`mailto:${env.VITE_APP_EMAIL}`">
+        <img :src="header_second_imgs.mail" alt="mail">
+        {{ env.VITE_APP_EMAIL }}
+      </a>
     </div>
-  </header>
+  </div>
 </template>

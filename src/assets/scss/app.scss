@@ -107,3 +107,17 @@ body {
     opacity: 0.7;
   }
 }
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -5%;
+  background: #96ce06;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 5px;
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,9 +1,7 @@
 .header_second.header_second {
-  background: #14172466;
-  backdrop-filter: blur(30px);
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
   column-gap: 15px;
@@ -20,7 +18,11 @@
       margin-right: 10px;
     }
   }
+  span {
+    opacity: 0.7;
+  }
   a {
+    color: rgba(255, 255, 255, 0.7);
   }
   & > div {
     display: flex;

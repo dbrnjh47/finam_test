@@ -1,1 +1,7 @@
 @use 'second.scss';
+@use 'base.scss';
+
+header {
+  background: #14172466;
+  backdrop-filter: blur(30px);
+}
