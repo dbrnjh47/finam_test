@@ -1,0 +1,29 @@
+.header_second.header_second {
+  background: #14172466;
+  backdrop-filter: blur(30px);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  span,
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -5%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    img,
+    svg {
+      margin-right: 10px;
+    }
+  }
+  a {
+  }
+  & > div {
+    display: flex;
+    gap: 30px;
+  }
+}
