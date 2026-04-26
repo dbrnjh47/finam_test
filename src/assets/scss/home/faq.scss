@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 70.21vw auto;
     gap: 20px;
+
+    @media (min-width: 1920px) {
+      grid-template-columns: auto 440px;
+    }
   }
   & > h2 {
     margin-bottom: 60px;
