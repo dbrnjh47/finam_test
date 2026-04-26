@@ -2,10 +2,20 @@
 import '@/assets/scss/home/index.scss';
 import bgImage from '@/assets/images/home/heroes/1.png'
 
+import Breadcrumb from '@/components/Breadcrumb.vue'
+
+const breadcrumbItems = [
+  { name: 'Тест', url: '/22' },
+  { name: 'Юридическое сопровождение', active: true }
+]
+
 </script>
 
 <template>
   <section class="home_hero home_hero__container">
+
+    <Breadcrumb :items="breadcrumbItems" />
+
     <img :src="bgImage" alt="bg">
     <h1>Юридическое сопровождение</h1>
     <p>Претензий в случае нарушений застройщиком сроков сдачи объектов, несоответствия жилья технической и проектной
