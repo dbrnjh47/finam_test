@@ -1,0 +1,111 @@
+@use "fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  // scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+label, svg{
+  transition: all 0.4s;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  overflow-x: hidden !important;
+}
+
+//
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #de002b;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dfe3ee;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+  height: 5px;
+  border-radius: 10px;
+}
+
+//
+
+[class*="__container"] {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+}
+
+[class*="__button"] {
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+body{
+  background: red;
+}
