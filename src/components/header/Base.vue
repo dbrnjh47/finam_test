@@ -44,9 +44,16 @@ const phone = import.meta.env.VITE_APP_PHONE;
         </li>
       </ul>
     </div>
+
     <div class="header_base__actions">
       <a :href="`tel:${phone}`" itemprop="telephone">{{ formatPhoneNumber(phone) }}</a>
       <button class="btn">Войти</button>
+    </div>
+
+    <div class="header_base__burger">
+      <div class="header_base__burger_rect"></div>
+      <div class="header_base__burger_rect"></div>
+      <div class="header_base__burger_rect"></div>
     </div>
   </div>
 </template>

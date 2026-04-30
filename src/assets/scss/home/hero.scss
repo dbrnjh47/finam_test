@@ -31,3 +31,21 @@
     object-fit: cover;
   }
 }
+
+.home_hero {
+  @media (max-width: 1050px) {
+    padding-bottom: 50px;
+    .breadcrumb__lists {
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 800px) {
+    p {
+      width: 100%;
+    }
+  }
+}

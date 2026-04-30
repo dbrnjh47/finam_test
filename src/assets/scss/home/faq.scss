@@ -16,3 +16,24 @@
     max-height: 213px;
   }
 }
+.home_faq {
+  @media (min-width: 1920px) {
+    & > div {
+      grid-template-columns: auto 440px;
+    }
+  }
+  @media (max-width: 1252px) {
+    & > div {
+      grid-template-columns: 62vw auto;
+    }
+  }
+  @media (max-width: 950px) {
+    margin-top: 40px;
+    & > div {
+      grid-template-columns: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}

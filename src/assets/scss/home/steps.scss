@@ -43,3 +43,33 @@
     color: #141724;
   }
 }
+
+.home_steps {
+  @media (max-width: 950px) {
+    margin-top: 40px;
+    &__text {
+      line-height: 120%;
+    }
+    &__list {
+      gap: 10px;
+      &_wrapper {
+        margin-top: 20px;
+      }
+    }
+    &__item {
+      flex: 1 0 200px;
+      min-height: 145px;
+      p {
+        font-size: 14px;
+      }
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  @media (max-width: 766px) {
+    &__list_wrapper {
+      grid-template-columns: auto;
+    }
+  }
+}

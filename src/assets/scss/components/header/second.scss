@@ -29,3 +29,15 @@
     gap: 30px;
   }
 }
+
+.header_second.header_second {
+  @media (max-width: 700px) {
+    & > div {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
+}

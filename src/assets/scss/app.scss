@@ -101,14 +101,10 @@ textarea {
 [class*='__container'] {
   max-width: 1804px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 100%;
-}
-
-[class*='__button'] {
-  transition: all 0.4s;
-  &:hover {
-    opacity: 0.7;
+  @media (max-width: 1804px) {
+    max-width: 1660px;
   }
 }
 
@@ -133,6 +129,9 @@ h2 {
   letter-spacing: 3%;
   text-transform: uppercase;
   color: #141724;
+  @media (max-width: 950px) {
+    font-size: 34px;
+  }
 }
 
 input,
@@ -160,7 +159,8 @@ textarea {
   input {
     margin-left: 3px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
+    padding: 0 !important;
     line-height: 120%;
     letter-spacing: -5%;
     color: #141724;
@@ -169,6 +169,15 @@ textarea {
     margin-right: 8px;
     bottom: 2px;
     position: relative;
+  }
+
+  @media (max-width: 600px) {
+    input {
+      font-size: 14px !important;
+    }
+    span {
+      font-size: 14px !important;
+    }
   }
 }
 
@@ -192,5 +201,23 @@ textarea {
     line-height: 140%;
     letter-spacing: -5%;
     margin-top: 30px;
+  }
+  @media (max-width: 600px) {
+    padding: 25px;
+    h2 {
+      font-size: 28px;
+    }
+    &__inputs {
+      margin-top: 15px;
+      gap: 15px;
+    }
+    input {
+      padding: 13px 13px;
+      font-size: 14px;
+    }
+    button {
+      padding: 12px;
+      font-size: 14px;
+    }
   }
 }

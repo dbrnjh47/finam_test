@@ -14,17 +14,6 @@
     gap: 18px;
 
     transition: 0.3s;
-    .faq__trigger {
-      transition: 0.3s;
-      width: 60px;
-      height: 60px;
-      background: #f0f2f4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      stroke: #141724;
-      transition: all 0.4s;
-    }
 
     &.active {
       .faq__trigger {
@@ -34,6 +23,19 @@
         }
       }
     }
+  }
+
+  &__trigger {
+    transition: 0.3s;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    background: #f0f2f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: #141724;
+    transition: all 0.4s;
   }
 
   &__info {
@@ -46,14 +48,6 @@
 
     &:hover {
       box-shadow: 0px 1px 4px #5638fa;
-    }
-
-    @media (max-width: 600px) {
-      padding: 15px 10px;
-    }
-
-    @media (max-width: 397px) {
-      padding: 10px 15px;
     }
   }
 
@@ -87,12 +81,40 @@
     line-height: 150%;
     letter-spacing: -5%;
     max-width: 588px;
-    @media (max-width: 600px) {
+  }
+}
+
+.faq {
+  @media (max-width: 950px) {
+    &__answer h1 {
+      font-size: 18px;
+    }
+    &__trigger {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      svg {
+        width: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__result {
       font-size: 16px;
       margin-top: 7px;
     }
-    @media (max-width: 374px) {
+    &__info {
+      padding: 15px 10px;
+    }
+  }
+
+  @media (max-width: 397px) {
+    &__result {
       font-size: 12px;
+    }
+    &__info {
+      padding: 10px 15px;
     }
   }
 }

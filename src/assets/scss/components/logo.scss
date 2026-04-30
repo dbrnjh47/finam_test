@@ -8,6 +8,7 @@
     color: #ffffff;
     margin-left: 10px;
     position: relative;
+    white-space: nowrap;
     &::after {
       content: '';
       display: block;

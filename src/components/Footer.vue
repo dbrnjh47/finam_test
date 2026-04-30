@@ -1,5 +1,5 @@
 <template>
-футер
+
 </template>
 
 <script>

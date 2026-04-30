@@ -4,10 +4,6 @@
   grid-template-columns: 70.21vw auto;
   gap: 20px;
 
-  @media (min-width: 1920px) {
-    grid-template-columns: auto 440px;
-  }
-
   table {
     margin-top: 60px;
     background: #ffffff;
@@ -63,6 +59,34 @@
     th:last-child,
     td:last-child {
       padding-right: 30px;
+    }
+  }
+}
+
+.home_disputes {
+  @media (min-width: 1920px) {
+    grid-template-columns: auto 440px;
+  }
+  @media (max-width: 1252px) {
+    grid-template-columns: 62vw auto;
+  }
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    margin-top: 40px;
+    table {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    table {
+      th:first-child,
+      td:first-child {
+        padding-left: 15px;
+      }
+      th:last-child,
+      td:last-child {
+        padding-right: 15px;
+      }
     }
   }
 }
