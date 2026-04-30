@@ -1,0 +1,45 @@
+.home_steps {
+  margin-top: 100px;
+  &__list {
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+    &_wrapper {
+      display: grid;
+      grid-template-columns: auto 271px;
+      gap: 33px;
+      margin-top: 60px;
+    }
+  }
+  &__item {
+    background: #ffffff;
+    padding: 24px;
+    display: grid;
+    align-content: space-between;
+    min-height: 162px;
+    flex: 1 0 calc(284px - 48px);
+    span {
+      font-family: Druk Cyr;
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 3%;
+      color: #5638fa;
+    }
+    p {
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: #141724;
+      letter-spacing: -5%;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -5%;
+    color: #141724;
+  }
+}
